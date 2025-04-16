@@ -16,8 +16,11 @@ B. Berger, M. S. Waterman, and Y. W. Yu, “Levenshtein Distance, Sequence Compa
 
 **FOLDER STRUCTURE**
 With the exception of this README.md file and two repo maintenance files (.gitattributes and .gitignore), this repository is split into three main directories:
+
 -> **Code_Scripts**: This directory contains the Python code script used in the generation of Figure 3C of the final report from the preprocessed data presented elsewhere in this repository. While other scripts used to preprocess the data and produce the other accompanying figures will be included in this directory in future iterations, the current script hosted is illustratively named "boxplot_figure_440.py".
+
 -> **Data_Files** This directory contains the pre-processed datasets used to prepare Figure 3C, but which were in fact used for many other purposes in this project, including training and testing the logistic regression and Random Forest classifiers. This directory leads to a split between two sub-directories: SLE_patient_samples, which accordingly hosts 10 datasets (one for each SLE patient), and healthy_patient_samples, which hosts 10 other datasets (one for each healthy volunteer). Each dataset is a TSV file and contains thousands of rows for three columns: "distance, frequency, CDR3 sequence". Note that the original numerical donor ID from which each sample was collected can be extracted from the names of the corresponding dataset files. Also note that each directory contains the maintenance .gitattributes file, which should be taken into consideration when running loops of code that iterate through every file name with the expectation that they are all the donor tsv libraries.
+
 -> **Figure Plots**: This directory contains the panel that became Figure 3C of the final report, in png format (as produced through the coding script). from the preprocessed data presented elsewhere in this repository. While other panels used to compose the final project figures will be included in this directory in future iterations, the current figure hosted is illustratively named "healthy_lupus_distaances_boxplot".
 
 **INSTALLATION**
